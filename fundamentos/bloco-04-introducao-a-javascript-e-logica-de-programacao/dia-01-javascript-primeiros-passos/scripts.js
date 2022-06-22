@@ -16,14 +16,27 @@
 
 // Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
-const a = 30;
-const b = 50;
+// const a = 30;
+// const b = 50;
 
-if (a > b) {
+// if (a > b) {
+//   console.log(a);
+// } else if (b > a) {
+//   console.log(b);
+// } else {
+//   console.log("valores iguais");
+// }
+
+// Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+
+const a = 3;
+const b = 6;
+const c = 9;
+
+if (a > b && a > c) {
   console.log(a);
-} else if (b > a) {
+} else if (b > a && b > c) {
   console.log(b);
-} else {
-  console.log("valores iguais");
+} else if (c > a && c > b) {
+  console.log(c);
 }
-
