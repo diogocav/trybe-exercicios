@@ -1,21 +1,19 @@
-// Crie uma variável chamada "weekDay" que recebe a string "quarta-feira".
+// Crie uma variável para armazenar o estado da pessoa candidata no processo seletivo, que pode ser: 'aprovada', 'lista' ou 'reprovada';
 
-let weekDay = "sabado";
+let estado = "oi";
 
-// Implemente condicionais para que:
-// Se nossa variável "weekDay" for "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira" ou "sexta-feira", imprima "Oba, mais um dia de aprendizado na Trybe >:D".
+// Crie uma estrutura condicional com o switch/case que irá imprimir as mensagens do exercício anterior se o estado da pessoa candidata for 'aprovada', 'lista' ou 'reprovada'. Como default, imprima a mensagem de 'não se aplica'.
 
-if (
-  weekDay == "segunda-feira" ||
-  weekDay == "terça-feira" ||
-  weekDay == "quarta-feira" ||
-  weekDay == "quinta-feira" ||
-  weekDay == "sexta-feira"
-) {
-  console.log("Oba, mais um dia de aprendizado na Trybe >:D");
-} else {
-  console.log("FINALMENTE, descanso merecido UwU");
+switch (estado) {
+  case "aprovada":
+    console.log(estado);
+    break;
+  case "lista":
+    console.log(estado);
+    break;
+  case "reprovada":
+    console.log(estado);
+    break;
+  default:
+    console.log("não se aplica");
 }
-
-// Se for algum dia de fim de semana, imprima "FINALMENTE, descanso merecido UwU".
-// Experimente trocar o valor da string ou até mesmo montar seu próprio algoritmo. Esse assunto é muito importante para seu aprendizado :).
