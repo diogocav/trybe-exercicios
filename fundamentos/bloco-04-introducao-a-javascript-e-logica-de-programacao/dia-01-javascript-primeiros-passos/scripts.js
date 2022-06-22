@@ -1,19 +1,15 @@
-// Crie uma variável para armazenar o estado da pessoa candidata no processo seletivo, que pode ser: 'aprovada', 'lista' ou 'reprovada';
+// Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
+// Adição (a + b)
+// Subtração (a - b)
+// Multiplicação (a * b)
+// Divisão (a / b)
+// Módulo (a % b)
 
-let estado = "oi";
+const a = 5
+const b = 6
 
-// Crie uma estrutura condicional com o switch/case que irá imprimir as mensagens do exercício anterior se o estado da pessoa candidata for 'aprovada', 'lista' ou 'reprovada'. Como default, imprima a mensagem de 'não se aplica'.
-
-switch (estado) {
-  case "aprovada":
-    console.log(estado);
-    break;
-  case "lista":
-    console.log(estado);
-    break;
-  case "reprovada":
-    console.log(estado);
-    break;
-  default:
-    console.log("não se aplica");
-}
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
