@@ -57,14 +57,50 @@
 // Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 // Um ângulo será considerado inválido se não tiver um valor positivo.
 
-const a = 90;
-const b = 40;
-const c = -1;
+// const a = 90;
+// const b = 40;
+// const c = -1;
 
-if (a + b + c === 180) {
-  console.log(true);
-} else if (a < 0 || b < 0 || c < 0) {
-  console.log("erro");
-} else {
-  console.log(false);
+// if (a + b + c === 180) {
+//   console.log(true);
+// } else if (a < 0 || b < 0 || c < 0) {
+//   console.log("erro");
+// } else {
+//   console.log(false);
+// }
+
+// Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+// Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) ==>> nomePeca.toLowerCase();
+
+// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+// Exemplo: bishop (bispo) -> diagonals (diagonais)
+
+var nomePeca = "Peon";
+
+switch (nomePeca.toLowerCase()) {
+  case "peon":
+    console.log("peão -> avança uma casa");
+    break;
+  case "tower":
+    console.log("torre -> avança em linha quantas casas quiser");
+    break;
+  case "horse":
+    console.log("cavalo -> avança 2 casa pra frente e 1 pra 1 dos lados");
+    break;
+  case "bishop":
+    console.log("bispo -> avança na diagonal quantas casa quiser");
+    break;
+  case "queen":
+    console.log("rainha -> avança em linha reta ou diagonal quantas casas quiser");
+    break;
+  case "king":
+    console.log("rei -> avança em linha reta ou diagonal uma casa");
+    break;
+  default:
+    console.log("erro");
+    break
 }
+
+
