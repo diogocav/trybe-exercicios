@@ -112,22 +112,34 @@
 // Porcentagem < 50 -> F
 // O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
-const nota = -10;
-const notaMaxima = 200;
+// const nota = -10;
+// const notaMaxima = 200;
 
+// if (nota/notaMaxima > 1 || nota/notaMaxima < 0){
+//   console.log("erro");
+// } else if (nota / notaMaxima >= 0.9) {
+//   console.log("A");
+// } else if (nota / notaMaxima >= 0.8) {
+//   console.log("B");
+// } else if (nota / notaMaxima >= 0.7) {
+//   console.log("C");
+// } else if (nota / notaMaxima >= 0.6) {
+//   console.log("D");
+// } else if (nota / notaMaxima >= 0.5) {
+//   console.log("E");
+// } else if (nota / notaMaxima < 0.5) {
+//   console.log("F");
+// }
 
-if (nota/notaMaxima > 1 || nota/notaMaxima < 0){
-  console.log("erro");
-} else if (nota / notaMaxima >= 0.9) {
-  console.log("A");
-} else if (nota / notaMaxima >= 0.8) {
-  console.log("B");
-} else if (nota / notaMaxima >= 0.7) {
-  console.log("C");
-} else if (nota / notaMaxima >= 0.6) {
-  console.log("D");
-} else if (nota / notaMaxima >= 0.5) {
-  console.log("E");
-} else if (nota / notaMaxima < 0.5) {
-  console.log("F");
+// Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
+// Bonus: use somente um if.
+
+const a = 3;
+const b = 4;
+const c = 9;
+
+if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
+  console.log(true);
+} else {
+  console.log(false);
 }
