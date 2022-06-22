@@ -77,30 +77,57 @@
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 
-var nomePeca = "Peon";
+// var nomePeca = "Peon";
 
-switch (nomePeca.toLowerCase()) {
-  case "peon":
-    console.log("peão -> avança uma casa");
-    break;
-  case "tower":
-    console.log("torre -> avança em linha quantas casas quiser");
-    break;
-  case "horse":
-    console.log("cavalo -> avança 2 casa pra frente e 1 pra 1 dos lados");
-    break;
-  case "bishop":
-    console.log("bispo -> avança na diagonal quantas casa quiser");
-    break;
-  case "queen":
-    console.log("rainha -> avança em linha reta ou diagonal quantas casas quiser");
-    break;
-  case "king":
-    console.log("rei -> avança em linha reta ou diagonal uma casa");
-    break;
-  default:
-    console.log("erro");
-    break
+// switch (nomePeca.toLowerCase()) {
+//   case "peon":
+//     console.log("peão -> avança uma casa");
+//     break;
+//   case "tower":
+//     console.log("torre -> avança em linha quantas casas quiser");
+//     break;
+//   case "horse":
+//     console.log("cavalo -> avança 2 casa pra frente e 1 pra 1 dos lados");
+//     break;
+//   case "bishop":
+//     console.log("bispo -> avança na diagonal quantas casa quiser");
+//     break;
+//   case "queen":
+//     console.log("rainha -> avança em linha reta ou diagonal quantas casas quiser");
+//     break;
+//   case "king":
+//     console.log("rei -> avança em linha reta ou diagonal uma casa");
+//     break;
+//   default:
+//     console.log("erro");
+//     break
+// }
+
+// Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+const nota = -10;
+const notaMaxima = 200;
+
+
+if (nota/notaMaxima > 1 || nota/notaMaxima < 0){
+  console.log("erro");
+} else if (nota / notaMaxima >= 0.9) {
+  console.log("A");
+} else if (nota / notaMaxima >= 0.8) {
+  console.log("B");
+} else if (nota / notaMaxima >= 0.7) {
+  console.log("C");
+} else if (nota / notaMaxima >= 0.6) {
+  console.log("D");
+} else if (nota / notaMaxima >= 0.5) {
+  console.log("E");
+} else if (nota / notaMaxima < 0.5) {
+  console.log("F");
 }
-
-
