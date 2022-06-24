@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
@@ -71,14 +71,36 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
 
-let numeros = [];
-for (let i = 1; i <= 25; i += 1) {
-  numeros.push(i);
-}
-console.log(numeros);
+// let numeros = [];
+// for (let i = 1; i <= 25; i += 1) {
+//   numeros.push(i);
+// }
+// console.log(numeros);
 
-// Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
+// // Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
 
-for (let i = 0; i < numeros.length; i += 1) {
-  console.log(numeros[i] / 2);
+// for (let i = 0; i < numeros.length; i += 1) {
+//   console.log(numeros[i] / 2);
+// }
+
+// BONUS
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// Ordene o array numbers em ordem crescente e imprima seus valores;
+// Ordene o array numbers em ordem decrescente e imprima seus valores;
+// Agora crie um novo array a partir do array numbers, sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push. O resultado deve ser o array abaixo:
+// [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
+
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] < numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
 }
+
+console.log(numbers);
+
+
