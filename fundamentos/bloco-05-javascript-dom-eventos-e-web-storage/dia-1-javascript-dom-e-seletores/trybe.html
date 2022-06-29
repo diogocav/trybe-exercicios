@@ -94,16 +94,24 @@
                 */
 
       function mudaTxtTagP() {
-        const p = document.getElementsByTagName("p")
+        const p = document.getElementsByTagName("p");
         for (index in p) {
-            p[index].style.textTransform = 'uppercase'
-        }        
+          p[index].style.textTransform = "uppercase";
+        }
       }
       mudaTxtTagP();
 
       /*
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+      function logP() {
+        const p = document.getElementsByTagName("p");
+        for (index in p) {
+          console.log(p[index])
+        }
+      }
+      logP();
     </script>
   </body>
 </html>
