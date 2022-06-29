@@ -38,3 +38,26 @@ console.log(tercFilho);
 // Agora acesse o terceiroFilho a partir de pai.
 
 console.log(document.querySelector('#pai').children[2]);
+
+// Crie um irmão para elementoOndeVoceEsta.
+
+const irm = document.createElement('section');
+irm.innerText = 'irmao criado'
+document.querySelector('#pai').appendChild(irm)
+
+// Crie um filho para elementoOndeVoceEsta.
+
+const irm2 = document.createElement('section');
+ond.appendChild(irm2)
+console.log(irm2);
+
+// Crie um filho para primeiroFilhoDoFilho.
+
+const irm3 = document.createElement('section');
+document.querySelector('#primeiroFilhoDoFilho').appendChild(irm3)
+console.log(irm3)
+
+// A partir desse filho criado, acesse terceiroFilho.
+
+// document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.nextElementSibling
+console.log(document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.nextElementSibling)
