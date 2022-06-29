@@ -95,9 +95,7 @@
 
       function mudaTxtTagP() {
         const p = document.getElementsByTagName("p");
-        for (index in p) {
-          p[index].style.textTransform = "uppercase";
-        }
+        p[0].style.textTransform = 'uppercase';
       }
       mudaTxtTagP();
 
@@ -108,7 +106,7 @@
       function logP() {
         const p = document.getElementsByTagName("p");
         for (index in p) {
-          console.log(p[index])
+          console.log(p[index].innerText)
         }
       }
       logP();
