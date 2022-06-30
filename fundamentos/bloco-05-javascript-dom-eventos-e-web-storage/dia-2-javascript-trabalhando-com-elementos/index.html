@@ -58,68 +58,49 @@
   <body>
     <script>
         //  Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
-        document.createElement('h1')
-        document.body.appendChild(document.createElement('h1'))
-        document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.2 - JavaScript DOM'
+        const tit1 = document.createElement('h1')
+        document.body.appendChild(tit1)
+        tit1.innerText = 'Exercício 5.2 - JavaScript DOM'
         // Adicione a tag main com a classe main-content como filho da tag body;
-        document.createElement('main')
-        document.body.appendChild(document.createElement('main'))
-        document.getElementsByTagName('main')[0].className = 'main-content'
+        const princ = document.createElement('main')
+        document.body.appendChild(princ)
+        princ.className = 'main-content'
         // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-        document.createElement('section')
-        document.getElementsByTagName('main')[0].appendChild(document.createElement('section'))
-        document.getElementsByTagName('section')[0].className = 'center-content'
+        const secao = document.createElement('section')
+        princ.appendChild(secao)
+        secao.className = 'center-content'
         // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-        document.createElement('p')
-        document.getElementsByTagName('section')[0].appendChild(document.createElement('p'))
-        document.getElementsByTagName('p')[0].innerText = 'Algum texto'
+        const parag = document.createElement('p')
+        secao.appendChild(parag)
+        parag.innerText = 'Algum texto'
         // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-        document.createElement('section')
-        document.getElementsByTagName('main')[0].appendChild(document.createElement('section'))
-        document.getElementsByTagName('section')[1].className = 'left-content'
+        const secaoE = document.createElement('section')
+        princ.appendChild(secaoE)
+        secaoE.className = 'left-content'
         // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-        document.createElement('section')
-        document.getElementsByTagName('main')[0].appendChild(document.createElement('section'))
-        document.getElementsByTagName('section')[2].className = 'right-content'
+        const secaoD = document.createElement('section')
+        princ.appendChild(secaoD)
+        secaoD.className = 'right-content'
         // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
-        document.createElement('img')
-        document.getElementsByTagName('section')[1].appendChild(document.createElement('img'))
-        document.getElementsByTagName('img')[0].src = 'https://picsum.photos/200'
-        document.getElementsByTagName('img')[0].className = 'small-image'
+        const imagem = document.createElement('img')
+        secaoE.appendChild(imagem)
+        imagem.src = 'https://picsum.photos/200'
+        imagem.className = 'small-image'
         // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-        document.createElement('ul')
-        document.getElementsByTagName('section')[2].appendChild(document.createElement('ul'))
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[0].innerText = 'um'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[1].innerText = 'dois'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[2].innerText = 'treis'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[3].innerText = 'quatro'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[4].innerText = 'cinco'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[5].innerText = 'seis'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[6].innerText = 'sete'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[7].innerText = 'oito'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[8].innerText = 'nove'
-        document.createElement('li')
-        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li'))
-        document.getElementsByTagName('li')[9].innerText = 'dez'
-
+        const lista = document.createElement('ul')
+        secaoD.appendChild(lista)
+        let valores = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
+        for (index in valores){
+          let item = document.createElement('li')
+          item.innerText = valores[index]
+          lista.appendChild(item)
+        }
+        // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+        for (let indice = 1; indice < 4; indice++){
+          const tit3 = document.createElement('h3')
+          tit3.innerText = 'Deu certo ' + indice
+          princ.appendChild(tit3)
+        }
 
 
     </script>
