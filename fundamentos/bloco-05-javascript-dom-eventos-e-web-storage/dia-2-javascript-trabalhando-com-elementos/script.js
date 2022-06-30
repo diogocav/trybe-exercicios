@@ -61,3 +61,12 @@ console.log(irm3)
 
 // document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.nextElementSibling
 console.log(document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.nextElementSibling)
+
+// Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+// document.getElementById('primeiroFilho').remove()
+// document.getElementById('segundoEUltimoFilhoDoFilho').remove()
+// document.getElementById('terceiroFilho').remove()
+// document.getElementById('quartoEUltimoFilho').remove()
+// document.querySelector('#primeiroFilho').remove()
+document.getElementById('pai').removeChild(document.getElementById('pai').firstElementChild)
