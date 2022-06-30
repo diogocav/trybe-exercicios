@@ -73,6 +73,10 @@
         document.createElement('p')
         document.getElementsByTagName('section')[0].appendChild(document.createElement('p'))
         document.getElementsByTagName('p')[0].innerText = 'Algum texto'
+        // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        document.createElement('section')
+        document.getElementsByTagName('main')[0].appendChild(document.createElement('section'))
+        document.getElementsByTagName('section')[1].className = 'left-content'
 
     </script>
   </body>
