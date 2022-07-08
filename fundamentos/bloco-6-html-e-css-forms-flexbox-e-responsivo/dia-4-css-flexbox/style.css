@@ -33,3 +33,27 @@
 #signup{
     color: gray;
 }
+.imagenslogos{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenslogosdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
+    gap: 7px;
+    
+}
+
+.imagenslogosdiv div {
+    background-color: #F1F1F1;
+    border-radius: 10%;
+    border-style: outset;
+    padding: 20px;
+}
+h4 {
+    text-align: center;
+}
