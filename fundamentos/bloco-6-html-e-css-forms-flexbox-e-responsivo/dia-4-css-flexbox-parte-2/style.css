@@ -58,6 +58,8 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-basis: 700px;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
@@ -79,6 +81,8 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
+  flex-basis: 16%;
+  flex-grow: 1;
 }
 
 .aside-container {
@@ -101,6 +105,8 @@ h4 {
   margin: 10px 0;
   text-align: justify;
 }
+
+
 
 /* 1 - Aplique uma base de 350px para seu container aside. Deverá ficar similar a imagem abaixo:
 
