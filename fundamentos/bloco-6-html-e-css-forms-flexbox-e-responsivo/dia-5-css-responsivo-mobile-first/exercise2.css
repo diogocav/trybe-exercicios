@@ -21,107 +21,126 @@ body {
 }
 
 header {
-    margin-bottom: 10%;
-    color: #D2A127;
+  margin-bottom: 10%;
+  color: #d2a127;
 }
 
 header h1 {
-    text-align: center;
+  text-align: center;
 }
 
 header nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none
+  list-style: none;
 }
 
 header nav ul li {
-    margin: 3%;
+  margin: 3%;
 }
 
 .aside-one {
-    margin-bottom: 10%;
-    color: #5870A1;
+  margin-bottom: 10%;
+  color: #5870a1;
 }
 
-.aside-one h2{
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 3%;
+.aside-one h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3%;
 }
 
 .aside-one ul {
-    list-style: none;
+  list-style: none;
 }
 
 .aside-one ul li {
-    margin: 1% 0; 
+  margin: 1% 0;
 }
 
 .aside-two {
-    margin-bottom: 10%;
-    color: #DBC8CB;
+  margin-bottom: 10%;
+  color: #dbc8cb;
 }
 
-.aside-two h2{
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 3%;
+.aside-two h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3%;
 }
 
 .aside-two ul {
-    list-style: none;
+  list-style: none;
 }
 
 .aside-two ul li {
-    margin: 1% 0; 
+  margin: 1% 0;
 }
 
 .main-content {
-    margin-bottom: 20%;
+  margin-bottom: 20%;
 }
 
 .main-content h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .main-content p {
-    text-align: justify;
-    line-height: 150%;
-    margin: 2% 0;
+  text-align: justify;
+  line-height: 150%;
+  margin: 2% 0;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-    header h1 {
-        font-size: 3em;
-    }
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none
-    }
-    header nav ul li {
-        margin: 0;
-        font-size: 2em;
-    }
-    aside {
-        font-size: 1.5em;
-    }
-    .main-content {
-        margin-bottom: 10%;
-    }
-    .main-content p {
-        line-height: 200%;
-        margin: 5% 0;
-    }
+  header h1 {
+    font-size: 3em;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    margin: 0;
+    font-size: 2em;
+  }
+  aside {
+    font-size: 1.5em;
+  }
+  .main-content {
+    margin-bottom: 10%;
+  }
+  .main-content p {
+    line-height: 200%;
+    margin: 5% 0;
+  }
 }
 @media (min-width: 992px) {
+  header h1 {
+    font-size: 5em;
+  }
+  header nav ul {
+    font-size: 2em;
+  }
+  aside {
+    font-size: 2em;
+  }
+  .main-content {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+  .main-content p {
+    line-height: 300%;
+    margin: 3% 0;
+  }
+  footer {
+    font-size: 1.5em;
+  }
 }
 
 /* Realize as seguintes tarefas:
