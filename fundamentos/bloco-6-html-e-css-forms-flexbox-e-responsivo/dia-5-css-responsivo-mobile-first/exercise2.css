@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 5% 10%;
+  background-color: #989bad;
+}
+
+header {
+  margin-bottom: 10%;
+  color: #d2a127;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 3%;
+}
+
+.aside-one {
+  margin-bottom: 10%;
+  color: #5870a1;
+}
+
+.aside-one h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+.aside-one ul {
+  list-style: none;
+}
+
+.aside-one ul li {
+  margin: 1% 0;
+}
+
+.aside-two {
+  margin-bottom: 10%;
+  color: #dbc8cb;
+}
+
+.aside-two h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+.aside-two ul {
+  list-style: none;
+}
+
+.aside-two ul li {
+  margin: 1% 0;
+}
+
+.main-content {
+  margin-bottom: 20%;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.main-content p {
+  text-align: justify;
+  line-height: 150%;
+  margin: 2% 0;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3em;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    margin: 0;
+    font-size: 2em;
+  }
+  aside {
+    font-size: 1.5em;
+  }
+  .main-content {
+    margin-bottom: 10%;
+  }
+  .main-content p {
+    line-height: 200%;
+    margin: 5% 0;
+  }
+}
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 5em;
+  }
+  header nav ul {
+    font-size: 2em;
+  }
+  aside {
+    font-size: 2em;
+  }
+  .main-content {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+  .main-content p {
+    line-height: 300%;
+    margin: 3% 0;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+}
+
+/* Realize as seguintes tarefas:
+1 - Utilizando a abordagem mobile first e media queries, crie três versões de layout diferentes para essa página. Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande). 
+
+Faça pelo menos um commit para cada layout;
+
+
+2 - Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+
+Como o cabeçalho deve ser posicionado?
+Onde a lista de capítulos deve estar posicionada?
+Como a história deve ser mostrada?
+O que fazer com as informações do autor em cada tamanho de tela?
+
+3 - Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página. */
