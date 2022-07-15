@@ -46,32 +46,39 @@
 // console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
 // console.log('Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!')
 
-
 // Parte II
 
 // Na matemática, o fatorial de um número inteiro e positivo N, representado por N!, é o produto de todos os seus antecessores até o número um. Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
 // Bônus (opcional): tente fazer o mesmo exercício de forma recursiva. Spoiler: É possível resolver com uma linha usando ternary operator.
 
-const fatorial = numero => {
-    let resultado = 1
-    for (let repeat = 1; repeat <= numero; repeat++) {
-        resultado *= repeat
-        console.log(resultado);
+// const fatorial = numero => {
+//     let resultado = 1
+//     for (let repeat = 1; repeat <= numero; repeat++) {
+//         resultado *= repeat
+//         console.log(resultado);
+//     }
+//     return resultado
+// }
+
+// console.log(fatorial(5));
+
+// Crie uma função que receba uma frase e retorne a maior palavra.
+// Exemplo:
+// longestWord('Antônio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
+
+const quebraFrase = (frase) => frase.split(' ');
+
+const maiorPalavra = (frase) => {
+  const arrayPalavras = frase.split(' ');
+  let maiorPalavra = '';
+  for (palavra of arrayPalavras) {
+    if (maiorPalavra.length < palavra.length) {
+        maiorPalavra = palavra;
     }
-    return resultado
-}
+  }
+  return maiorPalavra
+};
 
-console.log(fatorial(5));
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(
+  maiorPalavra('Antônio foi no banheiro e não sabemos o que aconteceu paralelepípedo')
+);
