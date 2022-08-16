@@ -201,8 +201,8 @@ const handlePokemonSearch = (error, message) => {
   }
 };
 
-getPokemonDetails('Bulbasaur', handlePokemonSearch);
-getPokemonDetails('teste', handlePokemonSearch);
+// getPokemonDetails('Bulbasaur', handlePokemonSearch);
+// getPokemonDetails('teste', handlePokemonSearch);
 
 // 8 - Para o próximo exercício, você vai sentir na pele o primeiro dia de um treinador Pokemon!
 // No laboratório do Professor Carvalho, você é informado de que existem três pokémons disponíveis: Bulbasaur, Charmander e Squirtle.

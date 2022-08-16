@@ -1,4 +1,5 @@
-const { getPokemonDetails, handlePokemonSearch } = require('./index');
+const handlePokemonSearch = require('./index.js');
+const getPokemonDetails = require('./index.js');
 
 // const uppercase = (str, callback) => {
 //   setTimeout(() => {
@@ -23,22 +24,23 @@ const { getPokemonDetails, handlePokemonSearch } = require('./index');
 // const { getPokemonDetails } = require('./get-pokemon-details');
 
 describe('A função getPokemonDetails', () => {
-  it('retorna erro quando procuramos um pokémon que não existe no banco de dados', (done) => {
-    // Escreva aqui seu código
-    const actual = getPokemonDetails('teste', handlePokemonSearch);
-    expect(() => actual).toThrown();
-    done()
+  it('retorna erro quando procuramos um pokémon que não existe no banco de dados', async () => {
+    console.log(typeof getPokemonDetails);
+    try {
+      await getPokemonDetails('teste', handlePokemonSearch);
+    } catch (e) {
+      expect(e).toEqual(new Error('Não temos esse pokémon para você :('));
+    }
   });
 
-  it('retorna um pokémon que existe no banco de dados', (done) => {
-    // Escreva aqui seu código
-    // getPokemonDetails('teste', handlePokemonSearch => {
-    //     try {
-    //         expect(handlePokemonSearch).toEqual()
-    //     } catch(erro) {
-    //         done(erro)
-    //     }
-    // })
+  it('retorna um pokémon que existe no banco de dados', async () => {
+    const actual = await getPokemonDetails('Bulbasaur', handlePokemonSearch);
+    try {
+      await expect(actual).toEqual(
+        'Olá, seu pokémon é o Bulbasaur, o tipo dele é Grama e a habilidade principal dele é Raio Solar'
+      );
+      done();
+    } catch (e) {}
   });
 });
 
